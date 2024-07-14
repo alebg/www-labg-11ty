@@ -1,0 +1,26 @@
+{
+  "en": {
+    "style": "Styled by",
+    "deployment": "Setup and deployment by",
+    "me": "myself",
+    "contact": "Contact me"
+  },
+  "es": {
+    "style": "Estilo por",
+    "deployment": "Configuración y despliegue por",
+    "me": "yo mismo",
+    "contact": "Contáctame"
+  },
+  "it": {
+    "style": "Stile da",
+    "deployment": "Configurazione e distribuzione da",
+    "me": "me stesso",
+    "contact": "Contattami"
+  },
+  "fr": {
+    "style": "Style par",
+    "deployment": "Configuration et déploiement par",
+    "me": "moi-même",
+    "contact": "Contactez-moi"
+  }
+}

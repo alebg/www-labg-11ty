@@ -1,0 +1,33 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-text-color);
+  font-weight: 700;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: 0.8rem; }
+
+p, li {
+  margin: 1rem 0;
+}
+
+ul, ol {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+li {
+  list-style-type: inherit;
+  margin-left: 1rem;
+}
+
+

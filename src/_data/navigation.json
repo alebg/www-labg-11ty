@@ -1,0 +1,38 @@
+{
+  "en": {
+    "home": "Home",
+    "blog": "Blog",
+    "cv": "CV",
+    "academia": "Academia",
+    "career": "Career",
+    "contact": "Contact",
+    "misc": "Misc"
+  },
+  "es": {
+    "home": "Inicio",
+    "blog": "Blog",
+    "cv": "CV",
+    "academia": "Academia",
+    "career": "Carrera",
+    "contact": "Contacto",
+    "misc": "Miscelánea"
+  },
+  "it": {
+    "home": "Home",
+    "blog": "Blog",
+    "cv": "CV",
+    "academia": "Accademia",
+    "career": "Carriera",
+    "contact": "Contatto",
+    "misc": "Miscellanea"
+  },
+  "fr": {
+    "home": "Accueil",
+    "blog": "Blog",
+    "cv": "CV",
+    "academia": "Académie",
+    "career": "Carrière",
+    "contact": "Contact",
+    "misc": "Divers"
+  }
+}

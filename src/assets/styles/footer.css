@@ -1,0 +1,18 @@
+footer {
+  background-color: var(--background-color);
+  color: var(--background-text-color);
+  text-align: center;
+  padding: 1rem 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: var(--background-text-color);
+  text-decoration: none; /* No underline on links */
+}
+
+footer a:hover {
+  color: #ddd;  /* Doesn't work if it's put in a variable */
+}

@@ -1,0 +1,57 @@
+/* Base style for navigation bar */
+nav {
+    background-color: var(--background-color); /* Dark background color */
+    color: var(--background-text-color); /* White text color */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly */
+    padding: 0.5rem 1rem; /* Padding around the nav */
+}
+
+nav a {
+    color: var(--background-text-color); /* White text color for links */
+    text-decoration: none; /* No underline on links */
+    margin: 0 1rem; /* Margin between links */
+}
+
+nav a:hover {
+    color: #ddd; /* Doesn't work if it's put in a variable */
+}
+
+nav ul {
+    display: flex; /* Use flexbox for layout */
+    list-style-type: none; /* No bullet points */
+}
+
+.language-grid {
+    vertical-align: middle;
+}
+
+.language-grid ul {
+    vertical-align: middle;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0; /* No gap between grid items */
+    grid-row-gap: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.language-grid li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-size: 0.5rem;
+    width: 15px; /* Width of each square */
+    height: 15px; /* Height of each square */
+    margin: 0;
+}
+
+.language-grid li a {
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  margin: 0;
+}
