@@ -1,6 +1,7 @@
 ---
-layout: home.njk
-title: Home
+layout: blog-post.njk
+title: Blog Home
+permalink: /blog/
 currentPageLocation: blog
 ---
 
@@ -15,4 +16,3 @@ Presentaton in English...
     <time>{{ post.data.date | date("MMMM dd, yyyy") }}</time>
 
 {% endfor %}
-

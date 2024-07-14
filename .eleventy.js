@@ -1,5 +1,7 @@
 // .eleventy.js
 const { format } = require('date-fns');
+const md = require("markdown-it")();
+const mathjax3 = require("markdown-it-mathjax3");
 
 module.exports = function(eleventyConfig) {
   // Add passthrough copy for static assets
@@ -16,12 +18,21 @@ module.exports = function(eleventyConfig) {
   });
 
   // Set up custom collections if needed
-  eleventyConfig.addCollection("post", function(collectionApi) {
-    return collectionApi.getFilteredByTag("post");
+  eleventyConfig.addCollection("posts", function(collectionApi) {
+    return collectionApi.getFilteredByTag("posts");
   });
-
+  
+  // Add a filter to format dates using date-fns
   eleventyConfig.addNunjucksFilter('date', function(date, dateFormat) {
     return format(date, dateFormat);
+  });
+
+  // Configure Markdown-It with MathJax, for LaTeX support
+  md.use(mathjax3, { html: true, linkify: true, typographer: true });
+
+  // Add Markdown-It as a filter
+  eleventyConfig.addFilter("latex", (content) => {
+    return md.render(content);
   });
 
 

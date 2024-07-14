@@ -1,9 +1,15 @@
 {% extends "src/layouts/base.njk" %}
 
+{% block nav %}
+  {% include "src/layouts/nav.njk" %}
+{% endblock %}
+
 {% block content %}
 <article>
   {{ content | safe }}
-
 </article>
+{% endblock %}
 
+{% block footer %}
+  {% include "src/layouts/footer.njk" %}
 {% endblock %}

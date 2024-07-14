@@ -1,0 +1,24 @@
+<nav>
+    <ul>
+        <li><a href="/{{ lang }}/">{{ navigation[lang].home }}</a></li>
+        <li><a href="/blog/">{{ navigation[lang].blog }}</a></li>
+        <li><a href="/{{ lang }}/academia/">{{ navigation[lang].academia }}</a></li>
+        <li><a href="/{{ lang }}/{{ navigation[lang].career  | slug }}/">{{ navigation[lang].career }}</a></li>
+        <li><a href="/{{ lang }}/misc/">{{ navigation[lang].misc }}</a></li>
+    </ul>
+
+    <div class="language-selector">
+    <select id="languageDropdown" onchange="changeLanguage(this)">
+        <option value="/en/{{ currentPageLocation }}" {% if lang == 'en' %}selected{% endif %}>en</option>
+        <option value="/es/{{ currentPageLocation }}" {% if lang == 'es' %}selected{% endif %}>es</option>
+        <option value="/it/{{ currentPageLocation }}" {% if lang == 'it' %}selected{% endif %}>it</option>
+        <option value="/fr/{{ currentPageLocation }}" {% if lang == 'fr' %}selected{% endif %}>fr</option>
+    </select>
+    </div>
+    <script>
+    function changeLanguage(select) {
+        window.location.href = select.value;
+    }
+    </script>
+
+</nav>

@@ -1,43 +1,24 @@
 <!DOCTYPE html>
-<html lang="{{ lang }}">
+<html lang="{{ lang | default('en', true) }}">
 
 <head>
   <meta charset="UTF-8">
   <title>{{ title }}</title>
   <link rel="stylesheet" href="/assets/styles/base-style.css">
+
+  {% block extendHead %}{% endblock %}
 </head>
 
 <body>
 
-  <nav>
-    <ul>
-      <li><a href="/{{ lang }}/">{{ navigation[lang].home }}</a></li>
-      <li><a href="/blog/">{{ navigation[lang].blog }}</a></li>
-      <li><a href="/{{ lang }}/academia/">{{ navigation[lang].academia }}</a></li>
-      <li><a href="/{{ lang }}/{{ navigation[lang].career  | slug }}/">{{ navigation[lang].career }}</a></li>
-      <li><a href="/{{ lang }}/misc/">{{ navigation[lang].misc }}</a></li>
-    </ul>
-
-    <div class="language-grid">
-      <ul>
-        <li><a href="/en/">EN</a></li>
-        <li><a href="/es/">ES</a></li>
-        <li><a href="/it/">IT</a></li>
-        <li><a href="/fr/">FR</a></li>
-      </ul>
-    </div>
-  </nav>
+  {% block nav %}{% endblock %}
 
   <main>
     {{ content | safe }}
   </main>
 
-  <footer>
-    <ul>
-      <p>{{ footer[lang].style }}: <a href="">Carla Bordo</a></p>
-      <p>{{ footer[lang].deployment }}: {{ footer[lang].me }}, <a href="/{{ lang }}/{{ navigation[lang].contact }}">{{ footer[lang].contact }}</a></p>
-    </ul>
-  </footer>
+  {% block footer %}{% endblock %}
+
 
 </body>
 </html>

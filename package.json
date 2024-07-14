@@ -13,6 +13,8 @@
     "@11ty/eleventy": "^2.0.1"
   },
   "dependencies": {
-    "date-fns": "^3.6.0"
+    "date-fns": "^3.6.0",
+    "markdown-it": "^14.1.0",
+    "markdown-it-mathjax3": "^4.3.2"
   }
 }

@@ -1,7 +1,19 @@
 {% extends "src/layouts/base.njk" %}
 
+{% block extendHead %}
+  {% include "src/layouts/mathjax-config.njk" %}
+{% endblock %}
+
+{% block nav %}
+  {% include "src/layouts/blog-nav.njk" %}
+{% endblock %}
+
 {% block content %}
 <article>
-  {{ content | safe }}
+  {{ content | latex | safe }}
 </article>
+{% endblock %}
+
+{% block footer %}
+  {% include "src/layouts/footer.njk" %}
 {% endblock %}
